@@ -13,12 +13,12 @@ import webContent.BrowserFactory;
 
 public class GoogleSigninTest extends BaseClass
 {
-	String url = "https://www.google.com";
-	String emailAddress = "angelicasellerst1@gmail.com";
-	String emailPass = "q123W456";
-	String desiredAccountData = "Google Account: Angelica Seller";
+	String url = "https://www.google.com"; //-------------Set URL that You want to reach-- 
+	String emailAddress = "angelicasellerst1@gmail.com"; //-------------Set Account email address for logging in-- 
+	String emailPass = "q123W456"; //-------------Set Accounts password for logging in-- 
+	String desiredAccountData = "Google Account: Angelica Seller"; //-------------Change Name to match expected account owner data-- 
 	
-//---------------------------------------THIS TEST IS USED FOR SEARCH FUNCTIONALITY VERIFICATION------------------------------------------	
+//---------------------------------------THIS TEST IS USED FOR SIGNIN FUNCTIONALITY VERIFICATION------------------------------------------	
 	
 	@BeforeTest
 	public void googleReach() 

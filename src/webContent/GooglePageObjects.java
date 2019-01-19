@@ -26,6 +26,7 @@ public class GooglePageObjects
 	private WebElement logo;
 	private WebElement searchField;
 	private WebElement searchBtn;
+	private WebElement searchBtnModal;
 	private WebElement whatsNew;
 	private WebElement languagesSel;
 	private WebElement currentLocation;
@@ -73,6 +74,11 @@ public class GooglePageObjects
 		{
 			searchBtn = driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[3]/center/input[1]"));
 			return searchBtn;
+		}
+	public WebElement getSearchBtnModal()
+		{
+			searchBtnModal = driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[2]/div[2]/div/center/input[1]"));
+			return searchBtnModal;
 		}
 	public WebElement getWhatsNew()
 		{

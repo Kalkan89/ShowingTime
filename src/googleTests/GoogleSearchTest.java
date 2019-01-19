@@ -11,9 +11,9 @@ import webContent.BrowserFactory;
 
 public class GoogleSearchTest extends BaseClass
 {
-	String url = "https://www.google.com";
-	String searchTerm = "ShowingTime";
-	String resultUrl = "https://www.showingtime.com/";
+	String url = "https://www.google.com"; //-------------Set URL that You want to reach-- 
+	String searchTerm = "ShowingTime"; //-------------Set the term that You want to search for--
+	String resultUrl = "https://www.showingtime.com/"; //-------------Set URL that You want to compare search results to--
 	
 //---------------------------------------THIS TEST IS USED FOR SEARCH FUNCTIONALITY VERIFICATION------------------------------------------	
 		
@@ -31,7 +31,8 @@ public class GoogleSearchTest extends BaseClass
 	public void searchFunctionality()
 	{
 		googlePageObjects.getSearchField().sendKeys(searchTerm);
-		googlePageObjects.moveToElementAndClick(googlePageObjects.getSearchBtn());
+		BrowserFactory.pauseFor(1);
+		googlePageObjects.moveToElementAndClick(googlePageObjects.getSearchBtnModal());
 		loginFormUtils.getResultField().click();
 		BrowserFactory.pauseFor(2);
 		String desiredUrl = driver.getCurrentUrl();

@@ -11,10 +11,12 @@ import org.testng.Assert;
 public class BrowserFactory
 {
 	
-		static String ChromeDriverLocation = "C:\\Users\\desktop\\Desktop\\chromedriver.exe";
+		static String ChromeDriverLocation = "C:\\Users\\desktop\\Desktop\\chromedriver.exe"; //-- Set path to location of your Chromedriver.
 		
-//Initial setup of the chromedriver, it will be instanced in other Test classes as well as methods.
-		 
+//Initial setup of the chromedriver, it will be instanced in other Test classes.
+//---------------------------------------------------------------------------------------------------------------------------
+		
+//--------------------------Browser starting---------------------------------------------------------------------------------
 		public static WebDriver startBrowser(String url)
 		{
 			System.setProperty("webdriver.chrome.driver", ChromeDriverLocation);
@@ -22,7 +24,7 @@ public class BrowserFactory
 			getUrl(url, driver);
 			return driver;	
 		}
-		
+//--------------------------URL fetching, verification that redirection didn't occur and full-screen mode setting-------------		
 		private static void getUrl(String url, WebDriver driver)
 		{
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -33,6 +35,7 @@ public class BrowserFactory
 			System.out.println("Browser opened with the url: "+url);
 			driver.findElement(By.xpath("//*[@id=\"SIvCob\"]/a[2]")).click();//--Comment-out if MacOs is used or English is set to default.
 		}
+//----------------------------Pausing method----------------------------------------------------------------------------------		
 		public static void pauseFor(double d)
 		{
 			try
@@ -45,6 +48,7 @@ public class BrowserFactory
 				System.out.println(e.toString());
 			}
 		}
+//-----------------------------Browser closing and instance termination method--------------------------------------------------		
 		public static void closeBrowser(WebDriver driver)
 		{
 			driver.quit();

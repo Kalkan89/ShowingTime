@@ -9,8 +9,8 @@ import webContent.BrowserFactory;
 
 public class GoogleElementsLabelsTest extends BaseClass
 {
-	String url = "https://www.google.com";
-	String currentLocationEntry = "Serbia";
+	String url = "https://www.google.com";   //-------------Set URL that You want to reach--
+	String currentLocationEntry = "Serbia";  //-------------Set desired location for country title verification--
 		
 //----------------------------------------THIS TEST VERIFIES THAT ALL PAGE ELEMENTS ARE PROPERLY TITLED-----------------------------------------	
 		

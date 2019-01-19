@@ -11,7 +11,7 @@ import webContent.BrowserFactory;
 
 public class GoogleElementsPresenceTest extends BaseClass
 {
-	String url = "https://www.google.com";
+	String url = "https://www.google.com"; //-------------Set URL that You want to reach--
 	
 //---------------------------------------THIS TEST VERIFIES THAT ALL PAGE ELEMENTS ARE PRESENT---------------------------------------------	
 	
@@ -28,7 +28,6 @@ public class GoogleElementsPresenceTest extends BaseClass
 	@Test
 	public void pageElementsVerification()
 	{
-		BrowserFactory.pauseFor(2);
 		assert googlePageObjects.getGmail().isDisplayed();
 		assert googlePageObjects.getPictures().isDisplayed();
 		assert googlePageObjects.getGoggleApps().isDisplayed();
