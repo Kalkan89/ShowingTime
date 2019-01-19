@@ -7,7 +7,7 @@ Chromedriver v2.39
 
 >>>>Instructions<<<<
 -----------------------------------------------------------
-Project is devided into 2 folders - "webContent" and "googleTests", where all the setup and utils are located in "webContent" folder
+Project is devided into 2 folders located in "src" folder - "webContent" and "googleTests", where all the setup and utils are located in "webContent" folder
 and tests specific folder is "googleTests".
 
 *PLEASE NOTE:* Depending on the OS that is being used, comment-out the lines that have been marked in the "BaseClass.java" located in "webContent" folder.
