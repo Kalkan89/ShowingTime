@@ -3,6 +3,7 @@
 Coding done in Eclipse Oxygene v1
 Language used in coding - Java v1.8.0_151
 Libraries used - TestNG, Selenium Standalone Server v3.6
+Testing v6.0 JAR. - http://www.java2s.com/Code/Jar/t/Downloadtestng60jar.htm
 Chromedriver v2.39
 
 >>>>Instructions<<<<
